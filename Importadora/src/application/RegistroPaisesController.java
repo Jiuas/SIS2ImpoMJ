@@ -27,11 +27,20 @@ public class RegistroPaisesController implements  Initializable{
     public void registrar (ActionEvent e){
         if(!txtFielPrecio.getText().equals("")
            && !txtFieldNombre.getText().equals("")){
-            System.out.println("puto");
-            Alert mensaje = new Alert(Alert.AlertType.CONFIRMATION);
+            System.out.println();
+            Alert mensaje = new Alert(Alert.AlertType.INFORMATION);
+            mensaje.setHeaderText("");
+            mensaje.setTitle("Registro completado!");
+            mensaje.setContentText("El registro se completo con exito!");
+            mensaje.showAndWait();
+            
         }else
         {
-              System.out.println("no puto");
+            Alert mensaje = new Alert(Alert.AlertType.ERROR);
+            mensaje.setHeaderText("UPS! a habido un error durante el proceso de registro");
+            mensaje.setTitle("Error al registrar");
+            mensaje.setContentText("Por favor revise que todos los campos fueron llenados correctamente");
+            mensaje.showAndWait();
         }
     }
     @Override
