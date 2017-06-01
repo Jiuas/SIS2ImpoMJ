@@ -33,6 +33,7 @@ public class RegistroPaisesController implements  Initializable{
             mensaje.setTitle("Registro completado!");
             mensaje.setContentText("El registro se completo con exito!");
             mensaje.showAndWait();
+            System.out.println("prueba");
             
         }else
         {
