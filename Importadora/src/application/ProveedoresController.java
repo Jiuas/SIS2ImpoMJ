@@ -50,7 +50,6 @@ public class ProveedoresController implements  Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        System.out.println("Entro papi");
         txtFProveedor.setOnKeyTyped(new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent event) {
