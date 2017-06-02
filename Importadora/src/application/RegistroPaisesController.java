@@ -46,9 +46,6 @@ public class RegistroPaisesController implements  Initializable{
             }
         }catch(SQLException i)
 
-            
-        }else
-
         {
             i.printStackTrace();
             mensaje = new Alert(Alert.AlertType.ERROR);
