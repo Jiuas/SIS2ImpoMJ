@@ -42,8 +42,13 @@ public class RegistroPaisesController implements  Initializable{
             mensaje.setContentText("El registro se completo con exito!");
             mensaje.showAndWait();
             System.out.println("prueba");
+
             }
         }catch(SQLException i)
+
+            
+        }else
+
         {
             i.printStackTrace();
             mensaje = new Alert(Alert.AlertType.ERROR);
