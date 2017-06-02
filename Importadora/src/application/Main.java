@@ -16,8 +16,8 @@ public class Main extends Application {
                 conector = new ConectaDB();
                 stage = primaryStage;
 		try {
-			AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("RegistroPaises.fxml"));
-			Scene scene = new Scene(root,400,200);
+			AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("Proveedores.fxml"));
+			Scene scene = new Scene(root);
 			//scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			stage.setScene(scene);
                         stage.setTitle("LOGIN");
